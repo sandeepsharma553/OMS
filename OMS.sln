@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMS.Server", "OMS.Server\OMS.Server.csproj", "{2CC5F642-CF9F-4C5A-8252-6760ADA33383}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "oms.client", "oms.client\oms.client.esproj", "{94B248DF-9A16-4817-BD5E-75E16EF3DF3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CC5F642-CF9F-4C5A-8252-6760ADA33383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CC5F642-CF9F-4C5A-8252-6760ADA33383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CC5F642-CF9F-4C5A-8252-6760ADA33383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CC5F642-CF9F-4C5A-8252-6760ADA33383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94B248DF-9A16-4817-BD5E-75E16EF3DF3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94B248DF-9A16-4817-BD5E-75E16EF3DF3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94B248DF-9A16-4817-BD5E-75E16EF3DF3B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{94B248DF-9A16-4817-BD5E-75E16EF3DF3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94B248DF-9A16-4817-BD5E-75E16EF3DF3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94B248DF-9A16-4817-BD5E-75E16EF3DF3B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA9BCFE8-4436-4E5A-B70F-3AA01B5D340E}
+	EndGlobalSection
+EndGlobal
