@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/OMS.Server/obj/Debug/net8.0/OMS.Server.AssemblyInfo.cs
+/OMS.Server/obj/Debug/net8.0/OMS.Server.AssemblyInfoInputs.cache
+/OMS.Server/obj/Debug/net8.0/OMS.Server.assets.cache
+/OMS.Server/obj/Debug/net8.0/OMS.Server.GeneratedMSBuildEditorConfig.editorconfig
+/OMS.Server/obj/Debug/net8.0/spa.proxy.json
+/OMS.Server/obj/OMS.Server.csproj.nuget.dgspec.json
+/OMS.Server/obj/project.assets.json
+/OMS.Server/obj/project.nuget.cache
