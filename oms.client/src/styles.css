@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/azure-blue.css';
+ /* @import '@angular/material/prebuilt-themes/rose-red.css'; */
+/* @import '@angular/material/prebuilt-themes/cyan-orange.css'; */
+/* @import '@angular/material/prebuilt-themes/magenta-violet.css'; */
+/* @import '@angular/material/prebuilt-themes/deeppurple-amber.css'; */
+/* @import '@angular/material/prebuilt-themes/indigo-pink.css'; */
+/* @import '@angular/material/prebuilt-themes/pink-bluegrey.css'; */
+/* @import '@angular/material/prebuilt-themes/purple-green.css'; */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/@material/button/dist/mdc.button.min.css';
+body {
+  height: 100%;
+  background-color: darkgray;
+  width: 99%;
+}
+a {
+ color: blue;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  
+}

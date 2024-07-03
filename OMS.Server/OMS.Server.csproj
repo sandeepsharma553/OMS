@@ -33,11 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Model\" />
-    <Folder Include="Context\" />
-    <Folder Include="Interface\" />
     <Folder Include="Common\" />
-    <Folder Include="Service\" />
   </ItemGroup>
 
 </Project>
