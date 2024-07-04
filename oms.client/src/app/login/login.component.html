@@ -8,26 +8,35 @@
   </div>
   <div class="col-md-6">
     <mat-card appearance="outlined" class="rightheader">
-      <form class="form">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form">
         <div class="row">
           <strong>Login</strong>
           <mat-card appearance="outlined">
             <br />
             <div class="row">
-              <div class="col-md-12">
-                <mat-form-field appearance="outline">
-                  <mat-label>User Name</mat-label>
-                  <input matInput type="text" class=""  />
-                </mat-form-field>
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <label>User Name</label>
+                <input type="text" class="form-control" formControlName="userName" [ngClass]="{ 'is-invalid': submitted && f['userName'].errors }">
+                <div *ngIf="submitted && f['userName'].errors" class="error">
+                  <div *ngIf="f['userName'].errors">Username is required</div>
+                </div>
               </div>
+              <div class="col-md-3"></div>
             </div>
             <div class="row">
-              <div class="col-md-12">
-                <mat-form-field appearance="fill">
-                  <mat-label>Password</mat-label>
-                  <input matInput type="password" />
-                </mat-form-field>
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <label>Password</label>
+                <input type="password" class="form-control" formControlName="password"   [ngClass]="{ 'is-invalid': submitted && f['password'].errors }">
+                <div *ngIf="submitted && f['password'].errors" class="error">
+                  <div *ngIf="f['password'].errors">Password is required</div>
+                </div>
               </div>
+              <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-12"><label></label></div>
             </div>
             <div class="row">
               <div class="col-md-12">
@@ -50,3 +59,4 @@
     </mat-card>
   </div>
 </div>
+<ngx-spinner type="ball-clip-rotate"></ngx-spinner>

@@ -138,3 +138,4 @@ D:\Website\Mechanic\OMS\OMS.Server\obj\Debug\net8.0\OMS.Server.pdb
 D:\Website\Mechanic\OMS\OMS.Server\obj\Debug\net8.0\OMS.Server.genruntimeconfig.cache
 D:\Website\Mechanic\OMS\OMS.Server\obj\Debug\net8.0\ref\OMS.Server.dll
 D:\Website\Mechanic\OMS\OMS.Server\obj\Debug\net8.0\OMS.Server.sourcelink.json
+D:\Website\Mechanic\OMS\OMS.Server\bin\Debug\net8.0\log4net.dll

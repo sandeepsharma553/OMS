@@ -22,7 +22,7 @@ const routes: Routes = [{
   component: NavBarComponent,
   children: [
     {
-      path: 'register',
+      path: 'employee',
       loadChildren: () => import('./components/employee/employee.module').then(m => m.EmployeeModule)
 
     }]

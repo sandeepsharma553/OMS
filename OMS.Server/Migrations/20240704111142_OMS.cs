@@ -19,18 +19,23 @@ namespace OMS.Server.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     LoginID = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserID = table.Column<int>(type: "int", nullable: false),
+                    EmpID = table.Column<int>(type: "int", nullable: false),
                     RoleID = table.Column<int>(type: "int", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
-                    Createdby = table.Column<int>(type: "int", nullable: false),
+                    CreatedBy = table.Column<int>(type: "int", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdatedBy = table.Column<int>(type: "int", nullable: false),
+                    UpdatedBy = table.Column<int>(type: "int", nullable: true),
                     UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Login", x => x.ID);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Login",
+                columns: new[] { "ID", "CreatedBy", "CreatedDate", "EmpID", "LoginID", "Password", "RoleID", "Status", "UpdatedBy", "UpdatedDate" },
+                values: new object[] { 1, 1, new DateTime(2024, 7, 4, 16, 41, 38, 50, DateTimeKind.Local).AddTicks(695), 0, "Admin", "12345", 1, 1, null, new DateTime(2024, 7, 4, 16, 41, 38, 50, DateTimeKind.Local).AddTicks(682) });
         }
 
         /// <inheritdoc />

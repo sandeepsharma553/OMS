@@ -24,6 +24,9 @@
     <PackageJsonDependenciesNgBootstrapNgBootstrap Condition="$(PackageJsonDependenciesNgBootstrapNgBootstrap) == ''">^17.0.0</PackageJsonDependenciesNgBootstrapNgBootstrap>
     <PackageJsonDependenciesBootstrap Condition="$(PackageJsonDependenciesBootstrap) == ''">^5.3.3</PackageJsonDependenciesBootstrap>
     <PackageJsonDependenciesJestEditorSupport Condition="$(PackageJsonDependenciesJestEditorSupport) == ''">*</PackageJsonDependenciesJestEditorSupport>
+    <PackageJsonDependenciesNgxBootstrap Condition="$(PackageJsonDependenciesNgxBootstrap) == ''">^18.0.0</PackageJsonDependenciesNgxBootstrap>
+    <PackageJsonDependenciesNgxSpinner Condition="$(PackageJsonDependenciesNgxSpinner) == ''">^17.0.0</PackageJsonDependenciesNgxSpinner>
+    <PackageJsonDependenciesNgxToastr Condition="$(PackageJsonDependenciesNgxToastr) == ''">^19.0.0</PackageJsonDependenciesNgxToastr>
     <PackageJsonDependenciesRunScriptOs Condition="$(PackageJsonDependenciesRunScriptOs) == ''">*</PackageJsonDependenciesRunScriptOs>
     <PackageJsonDependenciesRxjs Condition="$(PackageJsonDependenciesRxjs) == ''">~7.8.0</PackageJsonDependenciesRxjs>
     <PackageJsonDependenciesTslib Condition="$(PackageJsonDependenciesTslib) == ''">^2.3.0</PackageJsonDependenciesTslib>

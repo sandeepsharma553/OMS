@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using OMS.Server.Configuration;
 using OMS.Server.Model;
 
 namespace OMS.Server.Context
@@ -10,6 +11,7 @@ namespace OMS.Server.Context
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfiguration(new LoginConfiguration());
         }
         public DbSet<Login> Login { get; set; }
     }

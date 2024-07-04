@@ -16,6 +16,7 @@
     height: 450px;
     margin-right: 10px;
 }
+
 .form {
     margin-top: 80px;
     align-items: center;
@@ -23,17 +24,6 @@
     margin-right: 100px;
     height: 400px;
 }
-
-  input {
-    border: none;
-    background: none;
-    padding: 0;
-    outline: none;
-    font: inherit;
-    text-align: center;
-    color: currentColor;
-  }
- 
 
 @media screen and (max-width: 500px) {
     .header {
@@ -43,7 +33,7 @@
         padding: 12px;
         margin-bottom: 10px;
     }
-    
+
     .leftheader {
         height: 200px;
         margin-left: 10px;
@@ -63,7 +53,5 @@
         height: 400px;
         width: 300px;
     }
-     .mat-mdc-button-base {
-        margin: 8px 8px 8px 0;
-      }
+
 }

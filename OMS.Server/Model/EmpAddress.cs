@@ -16,10 +16,10 @@ namespace OMS.Server.Model
         public string Address { get; set; }
         public string Latitute { get; set; }
         public string Longitute { get; set; }
-        public int Createdby { get; set; }
+        public int CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
-        public int UpdatedBy { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        public int? UpdatedBy { get; set; }
+        public DateTime UpdatedDate { get; set; } = DateTime.Now;
 
     }
 }

@@ -12,7 +12,7 @@ using OMS.Server.Context;
 namespace OMS.Server.Migrations
 {
     [DbContext(typeof(dbContext))]
-    [Migration("20240702120608_OMS")]
+    [Migration("20240704111142_OMS")]
     partial class OMS
     {
         /// <inheritdoc />
@@ -33,10 +33,13 @@ namespace OMS.Server.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
+                    b.Property<int>("CreatedBy")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Createdby")
+                    b.Property<int>("EmpID")
                         .HasColumnType("int");
 
                     b.Property<string>("LoginID")
@@ -53,18 +56,29 @@ namespace OMS.Server.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
-                    b.Property<int>("UpdatedBy")
+                    b.Property<int?>("UpdatedBy")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("UserID")
-                        .HasColumnType("int");
-
                     b.HasKey("ID");
 
-                    b.ToTable("Login");
+                    b.ToTable("Login", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            ID = 1,
+                            CreatedBy = 1,
+                            CreatedDate = new DateTime(2024, 7, 4, 16, 41, 38, 50, DateTimeKind.Local).AddTicks(695),
+                            EmpID = 0,
+                            LoginID = "Admin",
+                            Password = "12345",
+                            RoleID = 1,
+                            Status = 1,
+                            UpdatedDate = new DateTime(2024, 7, 4, 16, 41, 38, 50, DateTimeKind.Local).AddTicks(682)
+                        });
                 });
 #pragma warning restore 612, 618
         }
