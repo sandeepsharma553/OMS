@@ -1,1 +1,187 @@
-<p>add works!</p>
+<div class="container">
+
+    <div class="card" style="top: 10px;">
+        <div class="card-body">
+            <div class="card-text">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                            type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="adress-tab" data-bs-toggle="tab" data-bs-target="#adress"
+                            type="button" role="tab" aria-controls="adress" aria-selected="false">Adress</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="service-tab" data-bs-toggle="tab" data-bs-target="#service"
+                            type="button" role="tab" aria-controls="service" aria-selected="false">Service</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="location-tab" data-bs-toggle="tab" data-bs-target="#location"
+                            type="button" role="tab" aria-controls="location" aria-selected="false">Location</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <form style="padding: 12px;">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-md-3">
+                                    <label>Mobile No</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>Email</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-md-3">
+                                    <label>User Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>Password</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-md-3">
+                                    <label>Confirm Password</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div> <br />
+                            <div class="row">
+                                <div class="col-md-3">
+
+                                </div>
+                                <div class="col-md-3">
+                                    <label></label>
+                                    <button mat-raised-button>Save & Next</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="adress" role="tabpanel" aria-labelledby="adress-tab">
+                        <form style="padding: 12px;">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>State</label>
+                                    <select>
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label>District</label>
+                                    <select>
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>Tehsil</label>
+                                    <select>
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label>Village</label>
+                                    <select>
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Address</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div> <br />
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label></label>
+                                    <button mat-raised-button>Add More</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <label></label>
+                                    <button mat-raised-button>Save & Next</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="service" role="tabpanel" aria-labelledby="service-tab">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>Service</label>
+                                    <select>
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label></label>
+                                    <select>
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label></label>
+                                    <select>
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label></label>
+                                    <select>
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label></label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div> <br />
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <button mat-raised-button>Add More</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <label></label>
+                                    <button mat-raised-button>Save & Next</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Current Location</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div> <br />
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <button mat-raised-button>Add More</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <label></label>
+                                    <button mat-raised-button>Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

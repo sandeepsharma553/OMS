@@ -34,6 +34,7 @@
     <PackageJsonDevdependenciesAngularDevkitBuildAngular Condition="$(PackageJsonDevdependenciesAngularDevkitBuildAngular) == ''">^18.0.6</PackageJsonDevdependenciesAngularDevkitBuildAngular>
     <PackageJsonDevdependenciesAngularCli Condition="$(PackageJsonDevdependenciesAngularCli) == ''">^18.0.6</PackageJsonDevdependenciesAngularCli>
     <PackageJsonDevdependenciesAngularCompilerCli Condition="$(PackageJsonDevdependenciesAngularCompilerCli) == ''">^18.0.0</PackageJsonDevdependenciesAngularCompilerCli>
+    <PackageJsonDevdependenciesTypesGooglemaps Condition="$(PackageJsonDevdependenciesTypesGooglemaps) == ''">^3.43.3</PackageJsonDevdependenciesTypesGooglemaps>
     <PackageJsonDevdependenciesTypesJasmine Condition="$(PackageJsonDevdependenciesTypesJasmine) == ''">~5.1.0</PackageJsonDevdependenciesTypesJasmine>
     <PackageJsonDevdependenciesJasmineCore Condition="$(PackageJsonDevdependenciesJasmineCore) == ''">~5.1.0</PackageJsonDevdependenciesJasmineCore>
     <PackageJsonDevdependenciesKarma Condition="$(PackageJsonDevdependenciesKarma) == ''">~6.4.0</PackageJsonDevdependenciesKarma>
