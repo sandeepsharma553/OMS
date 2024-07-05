@@ -10,10 +10,12 @@ import { map, Observable } from 'rxjs';
 export class AddComponent {
   public lat!:any;
   public lng!:any;
-  key = '';//'AIzaSyDAYHC-cMrxWQd5LSta5kfssFpnbqI-IYo';
+  address= '';
+  key = 'AIzaSyDAYHC-cMrxWQd5LSta5kfssFpnbqI-IYo';
   
   constructor(private http:HttpClient){
     this.getLocation();
+    
   }
   getLocation() {
     if (navigator.geolocation) {
@@ -27,7 +29,7 @@ export class AddComponent {
           console.log(this.lat);
           console.log(this.lat);
           setTimeout(()=>{
-            this.getAddress(this.lat,this.lng);
+            //this.getAddress(this.lat,this.lng);
           },1000)
          
         }
@@ -62,7 +64,6 @@ getAddress(lat: number, lng: number): Promise<any> {
       )
       .pipe(
         map((geoData) => {
-          console.log('geoData',geoData)
           if (!geoData || !geoData.results || geoData.results.length === 0)
             throw null;
           return geoData.results[0];
@@ -70,8 +71,9 @@ getAddress(lat: number, lng: number): Promise<any> {
       )
       .subscribe(
         (data) => {
-          console.log('data',data);
+          console.log('address',data.formatted_address);
           resolve(data);
+          this.address = data.formatted_address;
         },
         (e) => {
           reject(e);

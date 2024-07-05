@@ -11,7 +11,7 @@
 
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="adress-tab" data-bs-toggle="tab" data-bs-target="#adress"
-                            type="button" role="tab" aria-controls="adress" aria-selected="false">Adress</button>
+                            type="button" role="tab" aria-controls="adress" aria-selected="false">Address</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="service-tab" data-bs-toggle="tab" data-bs-target="#service"
@@ -166,7 +166,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <label>Current Location</label>
-                                    <textarea class="form-control"></textarea>
+                                    <textarea class="form-control" [value]="this.address" style="height: 200px;" ></textarea>
                                 </div>
                             </div> <br />
                             <div class="row">
